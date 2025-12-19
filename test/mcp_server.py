@@ -1,7 +1,7 @@
 from mcp.server.fastmcp import FastMCP
 
 # Create the FastMCP server instance
-mcp = FastMCP("mcp-documentation-server")
+mcp = FastMCP("mcp-documentation-server", port="10000", host="localhost")
 
 # Register tool using FastMCP decorator
 @mcp.tool()
