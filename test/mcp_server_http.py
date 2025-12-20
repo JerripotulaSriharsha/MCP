@@ -1,7 +1,7 @@
 from mcp.server.fastmcp import FastMCP
 
 # Create the FastMCP server instance
-mcp = FastMCP("mcp-documentation-server", port="10000", host="localhost")
+mcp = FastMCP("mcp-database-server")
 
 # Register tool using FastMCP decorator
 @mcp.tool()
@@ -14,4 +14,4 @@ def get_documentation_from_database() -> dict:
     }
 
 if __name__ == "__main__":
-    mcp.run("stdio")
+    mcp.run("streamable-http")
