@@ -1,0 +1,23 @@
+[project]
+name = "mcp-server" 
+version = "0.1.0"
+description = "MCP project"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "mcp==1.24.0",
+    "fastapi>=0.95.0",
+    "uvicorn[standard]>=0.22.0",
+    "httpx",
+    "python-dotenv>=1.0.0",
+    "openai",
+    "pydantic",
+    "deepeval",
+    "pdfplumber",
+    "pandas",
+    "dotenv",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
